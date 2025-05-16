@@ -1,0 +1,20 @@
+<odoo>
+    <record id="view_todo_task_line_tree_inherit" model="ir.ui.view">
+        <field name="name">todo.task.line.tree.inherit</field>
+        <field name="model">todo.task.line</field>
+        <field name="inherit_id" ref="todo_management.view_todo_task_line_tree"/>
+        <field name="arch" type="xml">
+
+
+            <field name="name" position="after">
+                <field name="completed"/>
+            </field>
+
+
+            <field name="todo_task_id" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </field>
+
+        </field>
+    </record>
+</odoo>
